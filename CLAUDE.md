@@ -16,7 +16,7 @@ Goal: Master the most feared concept in C—the pointer—and learn to manage me
     * Memory addresses and the & and * operators.
     * Dynamic Memory Allocation: malloc(), calloc(), and the crucial free().
     * Memory Leaks: What happens when you lose a pointer to the heap.
-* The "Web Dev" Comparison: This is what’s happening under the hood when you create a new object in high-level languages.
+* The "Web Dev" Comparison: This is what's happening under the hood when you create a new object in high-level languages.
 * Practical Lab: Implement a Singly Linked List. You must manually malloc every new node and free the entire list when finished.
 Week 3: Buffer Management & Strings
 Goal: Learn why "strings" aren't actually a type in C and how this relates to security and performance.
@@ -36,7 +36,7 @@ Goal: Learn how to group data together without the overhead of Objects or Classe
 * Practical Lab: Build a basic Hash Table. Use a simple hash function to map strings to struct pointers. Handle collisions using the linked list skills from Week 2.
 
 Getting Started Checklist
-1. Compiler: If you’re on macOS, run xcode-select --install. On Windows, install wsl2 or MinGW.
+1. Compiler: If you're on macOS, run xcode-select --install. On Windows, install wsl2 or MinGW.
 2. The "Holy Grail" Text: Keep a PDF of The C Programming Language (K&R) nearby for reference.
-3. The Secret Weapon: Use Valgrind (or the AddressSanitizer in Clang) to check for memory leaks. It will tell you exactly which line of code "leaked" memory.
+3. The Secret Weapon: Use `leaks` (built into macOS) for quick checks, or compile with AddressSanitizer (`-fsanitize=address`) for detailed memory error detection. ASan will catch out-of-bounds access, use-after-free, and leaks with exact line numbers.
 4. Compile with the following flags to learn to read compiler errors: `-Wall` `-Wextra` `-pedantic`

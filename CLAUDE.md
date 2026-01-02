@@ -39,3 +39,4 @@ Getting Started Checklist
 1. Compiler: If you’re on macOS, run xcode-select --install. On Windows, install wsl2 or MinGW.
 2. The "Holy Grail" Text: Keep a PDF of The C Programming Language (K&R) nearby for reference.
 3. The Secret Weapon: Use Valgrind (or the AddressSanitizer in Clang) to check for memory leaks. It will tell you exactly which line of code "leaked" memory.
+4. Compile with the following flags to learn to read compiler errors: `-Wall` `-Wextra` `-pedantic`

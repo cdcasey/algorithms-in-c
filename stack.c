@@ -11,7 +11,7 @@ int is_empty(void) {
 
 int is_full(void) {
     // your turn: when is the stack full?
-    return top == 10;
+    return top == STACK_SIZE - 1;
 }
 
 void push(int value) {
